@@ -1,13 +1,9 @@
-import React, { useEffect } from 'react'
-
 interface SearchTextProps {
   searchText: string,
   setSearchText: (text: string) => void;
 }
 
 const SearchBar = ({ searchText, setSearchText }: SearchTextProps) => {
-
-
   return (
     <div className="bg-gray-300 w-full p-3 rounded-t-md">
       <input
