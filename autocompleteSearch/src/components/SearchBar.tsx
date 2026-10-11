@@ -1,9 +1,11 @@
-interface SearchTextProps {
-  searchText: string,
+import React from "react";
+
+interface SearchBarProps {
+  searchText: string;
   setSearchText: (text: string) => void;
 }
 
-const SearchBar = ({ searchText, setSearchText }: SearchTextProps) => {
+const SearchBar: React.FC<SearchBarProps> = ({ searchText, setSearchText }) => {
   return (
     <div className="bg-gray-300 w-full p-3 rounded-t-md">
       <input
@@ -14,7 +16,7 @@ const SearchBar = ({ searchText, setSearchText }: SearchTextProps) => {
         className="w-full bg-transparent outline-none text-black"
       />
     </div>
-  )
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;
